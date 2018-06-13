@@ -6,9 +6,10 @@ use Think\Model;
 
 class CasesModel extends Model
 {
-    protected $tableName = 'cases';
 
-    // 获取列表
+    /**
+     * 获取列表
+     */
     public function getCases()
     {
 
@@ -22,7 +23,10 @@ class CasesModel extends Model
 
     }
 
-    // 创建
+
+    /**
+     * 创建
+     */
      public function Create($param)
     {
 
@@ -78,7 +82,9 @@ class CasesModel extends Model
 
     }
 
-    // 修改
+    /**
+     * 修改
+     */
      public function Edit($param)
     {
 
@@ -135,7 +141,9 @@ class CasesModel extends Model
 
     }
 
-    // 删除
+    /**
+     * 删除
+     */
   	  public function Del($param)
     {
 

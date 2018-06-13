@@ -5,7 +5,9 @@ use Think\Controller;
 
 class CasesController extends BaseController
 {
-	// 获取案例列表
+    /**
+     * 获取案例列表
+     */
     public function index()
     {
     	
@@ -18,7 +20,9 @@ class CasesController extends BaseController
     }
 
 
-    // 新增&修改案例
+    /**
+     * 新增/修改案例
+     */
     public function create()
     {
 
@@ -67,7 +71,9 @@ class CasesController extends BaseController
 
     }
 
-    // 删除案例
+    /**
+     * 删除案例
+     */
     public function del()
     {
 
@@ -79,7 +85,10 @@ class CasesController extends BaseController
 
     }
 
-    // 上传图片
+
+    /**
+     * 上传封面图
+     */
     public function uploadImg()
     {
 
@@ -114,7 +123,9 @@ class CasesController extends BaseController
 
     }
 
-    // KindEditor 
+    /**
+     * KindEditor 编辑器
+     */
      public function fileUpload()
     {
         if (IS_POST) {

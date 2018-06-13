@@ -64,16 +64,12 @@ class LoginController extends Controller
 
         }
 
-
         $this->ajaxReturn($result);
-
 
 	}
 
 	 /**
 	 * 退出方法
-	 * 1. cookie设为null，删除cookie
-	 * 2. 跳转到首页
 	 */
 	 public function logout(){
 

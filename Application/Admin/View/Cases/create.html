@@ -41,7 +41,9 @@
                                         <div class="am-u-sm-9">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
-                                                    <img src="/Uploads/{$cases_detail.cover}" alt="">
+                                                    <if condition="$cases_detail.cover != ''">
+                                                        <img src="/Uploads/{$cases_detail.cover}" alt="">
+                                                    </if>   
                                                 </div>
                                                 <button type="button" class="am-btn am-btn-danger am-btn-sm">
                                                     <i class="am-icon-cloud-upload "></i> 添加封面图片</button>

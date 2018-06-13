@@ -8,7 +8,9 @@ class NewsModel extends Model
 {
     protected $tableName = 'news';
 
-    // 获取列表
+    /**
+     * 获取列表
+     */
     public function getNews()
     {
 
@@ -22,7 +24,9 @@ class NewsModel extends Model
 
     }
 
-    // 创建
+    /**
+     * 创建
+     */
      public function Create($param)
     {
 
@@ -80,7 +84,9 @@ class NewsModel extends Model
 
     }
 
-    // 修改
+    /**
+     * 修改
+     */
      public function Edit($param)
     {
 
@@ -139,7 +145,9 @@ class NewsModel extends Model
 
     }
 
-  	// 删除
+    /**
+     * 删除
+     */
   	  public function Del($param)
     {
 

@@ -5,7 +5,9 @@ use Think\Controller;
 
 class NewsController extends BaseController
 {
-	// 获取新闻列表
+    /**
+     * 获取新闻列表
+     */
     public function index()
     {
     	
@@ -17,7 +19,9 @@ class NewsController extends BaseController
 
     }
 
-    // 新增&修改新闻
+    /**
+     * 新增/修改新闻
+     */
     public function create()
     {
 
@@ -66,7 +70,9 @@ class NewsController extends BaseController
 
     }
 
-    // 删除新闻
+    /**
+     * 删除新闻
+     */
     public function del()
     {
 
@@ -78,7 +84,9 @@ class NewsController extends BaseController
 
     }
 
-     // KindEditor 
+    /**
+     * KindEditor 编辑器
+     */
      public function fileUpload()
     {
         if (IS_POST) {

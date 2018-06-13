@@ -28000,3 +28000,403 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
 
+[ 2018-06-13T16:15:37+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2018-06-13T16:15:38+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-06-13T16:25:45+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006557s ]
+
+[ 2018-06-13T16:25:49+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-06-13T16:27:57+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2018-06-13T16:28:01+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-06-13T16:28:08+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-06-13T16:28:20+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2018-06-13T16:28:23+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-06-13T16:28:26+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-06-13T16:28:36+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2018-06-13T16:28:49+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 267 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 275 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 284 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 311 行.
+NOTIC: [8] Undefined variable: cases_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/e9690c947746116b899e6f81f9bf47b0.php 第 368 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-06-13T16:28:52+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-06-13T16:28:54+08:00 ] ::1 /Admin/Cases/create?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_cases` WHERE `id` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+

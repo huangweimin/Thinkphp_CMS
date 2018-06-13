@@ -5,6 +5,9 @@ use Think\Controller;
 
 class IndexController extends BaseController
 {
+    /**
+     * 管理后台首页
+     */
     public function index()
     {
     	$map['is_deleted'] = 0;

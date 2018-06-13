@@ -154,7 +154,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="j-logout">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -214,6 +214,31 @@
             </ul>
         </div>
 
+        <script type="text/javascript">
+          // 提交
+            $('.j-logout').on('click',function(){
+
+                $.ajax({
+
+                    url: '<?php echo U("Admin/Login/logout");?>',
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            window.location.href = '/Admin//Login/index';
+
+                        } 
+
+                    }
+
+                });
+
+            })
+
+    </script>
 
 
     
@@ -256,7 +281,7 @@
                                         <div class="am-u-sm-9">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
-                                                    <img src="/Uploads/<?php echo ($cases_detail["cover"]); ?>" alt="">
+                                                    <?php if($cases_detail["cover"] != ''): ?><img src="/Uploads/<?php echo ($cases_detail["cover"]); ?>" alt=""><?php endif; ?>   
                                                 </div>
                                                 <button type="button" class="am-btn am-btn-danger am-btn-sm">
                                                     <i class="am-icon-cloud-upload "></i> 添加封面图片</button>
