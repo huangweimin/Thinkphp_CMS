@@ -1,0 +1,216 @@
+
+<include file="Share/header" />
+
+   <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="row-content am-cf">
+
+            <div class="row">
+
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                    <div class="widget am-cf">
+                        <div class="widget-head am-cf">
+                            <div class="widget-title am-fl">{$title}</div>
+                            <div class="widget-function am-fr">
+                                <a href="javascript:;" class="am-icon-cog"></a>
+                            </div>
+                        </div>
+                        <div class="widget-body am-fr">
+
+                            <form class="am-form tpl-form-border-form tpl-form-border-br">
+                                <div class="am-form-group">
+                                    <label for="title" class="am-u-sm-3 am-form-label">标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="title" placeholder="请输入标题文字" value="{$news_detail.title}">
+                                        <small>请填写标题文字10-20字左右。</small>
+                                    </div>
+                                </div>
+
+                                 <div class="am-form-group">
+                                    <label for="desc" class="am-u-sm-3 am-form-label">简介<span class="tpl-form-line-small-title">Desc</span></label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="4" id="desc" placeholder="请输入简介">{$news_detail.desc}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="type" class="am-u-sm-3 am-form-label">新闻类型 <span class="tpl-form-line-small-title">Type</span></label>
+                                    <div class="am-u-sm-9">
+                                        <select data-am-selected="{searchBox: 1}" style="display: none;" id="type">
+                                          <option value="1">公司新闻</option>
+                                          <option value="2">行业新闻</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-intro" class="am-u-sm-3 am-form-label">是否显示<span class="tpl-form-line-small-title">IsShow</span></label>
+                                    <div class="am-u-sm-9">
+                                        <div class="tpl-switch">
+                                            <input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked="" id="is_show">
+                                            <div class="tpl-switch-btn-view">
+                                                <div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="content" class="am-u-sm-3 am-form-label">详细内容<span class="tpl-form-line-small-title">Content</span></label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="10" id="content" placeholder="请输入文章内容">{$news_detail.content}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success j-submit">提交</button>
+                                        <button type="button" class="am-btn am-btn-default "  onclick="window.location.href='index'">取消</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+           var editor; 
+
+             KindEditor.ready(function(K) { 
+
+             editor = K.create('#content', { 
+
+                    allowFileManager : true,
+
+                     uploadJson:'{:U("fileUpload")}', //上传控制器所在url
+
+                 afterBlur: function(){this.sync();}
+
+                }); 
+
+            }); 
+
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+
+            // 获取新闻ID 
+             var _search = window.location.search;
+
+             var _page_id = ''
+
+            if (_search.indexOf('?id') != -1){
+
+                _page_id = _search.split('id=')[1];
+
+            }
+
+            //还原值
+            var $news_detail = {$news_detail | json_encode}
+
+            if($news_detail) {
+
+                $("#type").find("option[value="+$news_detail.type_id+"]").attr("selected",true);
+
+                if($news_detail.is_show == 0) {
+
+                    $("#is_show").attr('checked',false)
+
+                }
+
+            }   
+            
+
+            // 提交
+            $('.j-submit').on('click',function(){
+
+                var is_show = $('.tpl-switch-btn').is(":checked") ? 1 : 0;
+
+                if(!$('#title').val()){
+
+                    alert('标题不能为空！')
+
+                    return false
+
+                }
+                
+                var param = {
+
+                     title : $('#title').val(),
+
+                     desc : $('#desc').val(),
+
+                     type_id : $('#type').val(),
+
+                     type : $('#type option:selected').text(),
+
+                     is_show : is_show,
+
+                     content : $('#content').val()
+
+                }
+
+                if (!_page_id) {
+
+                     param = $.extend(param,{
+                       
+                        do : 'create'
+                 
+                    })
+
+                } else {
+
+                    param = $.extend(param,{
+                       
+                        do : 'edit',
+
+                        id : _page_id
+                 
+                    })
+
+                }
+
+                $.ajax({
+
+                    url: "create",
+
+                    data:param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            alert("操作成功！")
+
+                            window.location.href = '{:U("News/index")}';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+
+            })
+
+        })
+
+    </script>
+
+
+<include file="Share/footer" />

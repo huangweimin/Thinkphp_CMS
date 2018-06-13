@@ -1,0 +1,122 @@
+
+<include file="Share/header" />
+
+    <!-- 内容区域 -->
+        <div class="tpl-content-wrapper">
+
+
+            <div class="row-content am-cf">
+                <div class="row  am-cf">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
+                        <div class="widget am-cf">
+                            <div class="widget-head am-cf">
+                                <div class="widget-title am-fl">管理员，欢迎回来！</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
+                                </div>
+                            </div>
+                            <div class="widget-body am-fr">
+                                <div class="am-fl">
+                                    <div class="widget-fluctuation-period-text" style="min-height: 58px;">
+                                        系统时间：{$now_time}
+                                    </div>
+                                </div>
+                               <!--  <div class="am-fr am-cf">
+                                    <div class="widget-fluctuation-description-amount text-success" am-cf>
+                                        +￥30420.56
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                        <div class="widget widget-purple am-cf">
+                            <div class="widget-statistic-header">
+                                新闻统计
+                            </div>
+                            <div class="widget-statistic-body">
+                                <div class="widget-statistic-value">
+                                    {$news_count}
+                                </div>
+                                <div class="widget-statistic-description">
+                                    总发布条数
+                                </div>
+                                <span class="widget-statistic-icon am-icon-support"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                        <div class="widget widget-primary am-cf">
+                            <div class="widget-statistic-header">
+                                案例统计
+                            </div>
+                            <div class="widget-statistic-body">
+                                <div class="widget-statistic-value">
+                                     {$cases_count}
+                                </div>
+                                <div class="widget-statistic-description">
+                                    总发布条数
+                                </div>
+                                <span class="widget-statistic-icon am-icon-credit-card-alt"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row am-cf">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
+                        <div class="tpl-user-card am-text-center widget-body-lg">
+                            <div class="tpl-user-card-title">
+                                斯迈欧
+                            </div>
+                            <div class="achievement-subheading">
+                                月度最佳员工
+                            </div>
+                            <img class="achievement-image" src="__PUBLIC__/admin/assets/img/user07.png" alt="">
+                            <div class="achievement-description">
+                                斯迈欧在
+                                <strong>30天内</strong> 禁言了
+                                <strong>200多</strong>人。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
+
+                        <div class="widget am-cf widget-body-lg">
+
+                            <div class="widget-body  am-fr">
+                                <div class="am-scrollable-horizontal ">
+                                    <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black " id="example-r">
+                                        <thead>
+                                            <tr>
+                                                <th>文章标题</th>
+                                                <th>简介</th>
+                                                <th>时间</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <volist name="hot_list" id="vo"  >
+                                                <tr class="gradeX">
+                                                    <td class="am-text-middle">{$vo.title|mb_substr=0,10,'utf-8'}</td>
+                                                    <td class="am-text-middle">{$vo.desc|mb_substr=0,10,'utf-8'}</td>
+                                                    <td class="am-text-middle">{$vo.create_time}</td>
+                                                </tr>
+                                            </volist>
+
+                                            <!-- more data -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<include file="Share/footer" />

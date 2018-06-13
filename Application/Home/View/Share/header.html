@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>ThinkPHP web</title>
+
+        <link type="text/css" rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/common.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/amazeui.swiper.css"/>
+
+    <body>
+
+    <header class="am-topbar">
+        <h1 class="am-topbar-brand">
+            <a href="#">Amaze UI</a>
+        </h1>
+        
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active" data-class="Index"><a href="/">首页</a></li>
+            <li data-class="About"><a href="/Home/About/index">公司简介</a></li>
+            <li data-class="News"><a href="/Home/News/index">新闻中心</a></li>
+            <li class="am-dropdown" data-am-dropdown data-class="Product">
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    产品中心 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                <li class="am-dropdown-header">标题</li>
+                <li><a href="#">太阳能</a></li>
+                <li><a href="#">空气能</a></li>
+                </ul>
+            </li>
+            </ul>
+        
+            <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+            </div>
+            </form>
+        
+        </div>
+    </header>
+      
