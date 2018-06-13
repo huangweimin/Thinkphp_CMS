@@ -3,7 +3,7 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class CasesController extends Controller
+class CasesController extends BaseController
 {
 	// 获取案例列表
     public function index()
@@ -114,22 +114,37 @@ class CasesController extends Controller
 
     }
 
+    // KindEditor 
      public function fileUpload()
     {
         if (IS_POST) {
+
             $upload = new \Think\Upload();// 实例化上传类
+
             $upload->maxSize   =     999999999 ;// 设置附件上传大小
+
             $upload->exts      =    array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+
             $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+
             $path='/Uploads/';//设置上传目录
+
             $file = $upload->upload();
+
             if ($file) {
+
                 $file_url =__ROOT__.$path.$file['imgFile']['savepath'] . $file['imgFile']['savename'];//取得上传目录
+
                     echo json_encode(array('error' => 0, 'url' => $file_url));//返回的数据一定要是json
+
             } else {
+
                 $this->error($upload->getError());//返回错误
+
             }
+
         }
+
     }
 
 }

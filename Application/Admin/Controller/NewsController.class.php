@@ -3,7 +3,7 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class NewsController extends Controller
+class NewsController extends BaseController
 {
 	// 获取新闻列表
     public function index()

@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="/Public/admin/assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="/Public/admin/assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/Public/admin/assets/css/dataTables.bootstrap.css" />
-    <!-- <link rel="stylesheet" href="/Public/admin/assets/css/jquery.dataTables.css" /> -->
     <link rel="stylesheet" href="/Public/admin/assets/css/app.css">
     <script src="/Public/admin/assets/js/jquery.min.js"></script>
     <script src="/Public/admin/assets/js/theme.js"></script>
@@ -50,7 +49,7 @@
 
                 <form class="am-form tpl-form-line-form">
                     <div class="am-form-group">
-                        <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入账号">
+                        <input type="text" class="tpl-form-input" id="username" placeholder="请输入账号">
 
                     </div>
 
@@ -59,22 +58,17 @@
 
                     </div>
                     <div class="am-form-group tpl-login-remember-me">
-                        <input id="remember-me" type="checkbox">
-                        <label for="remember-me">
-       
+                        <input id="remember" type="checkbox">
+                        <label for="remember">
                         记住密码
                          </label>
 
                     </div>
 
 
-
-
-
-
                     <div class="am-form-group">
 
-                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn">提交</button>
+                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success tpl-login-btn j-login">提交</button>
 
                     </div>
                 </form>
@@ -84,6 +78,52 @@
 
      <script src="/Public/admin/assets/js/amazeui.min.js"></script>
     <script src="/Public/admin/assets/js/app.js"></script>
+
+    <script type="text/javascript">
+          // 提交
+            $('.j-login').on('click',function(){
+
+                if(!$('#username').val()) { alert('请输入帐号！'); return}
+
+                if(!$('#password').val()) { alert('请输入密码！'); return}
+
+                var param = {
+
+                     username : $('#username').val(),
+
+                     password : $('#password').val(),
+
+                     remember: $('#remember').is(":checked") ? 1 : 0
+
+                }
+
+                $.ajax({
+
+                    url: "login",
+
+                    data: param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            window.location.href = '/Admin//Index/index';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+            })
+
+    </script>
 </body>
 
 </html>
