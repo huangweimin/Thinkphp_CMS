@@ -57,14 +57,12 @@
                         <input type="password" class="tpl-form-input" id="password" placeholder="请输入密码">
 
                     </div>
-                    <div class="am-form-group tpl-login-remember-me">
+                 <!--    <div class="am-form-group tpl-login-remember-me">
                         <input id="remember" type="checkbox">
                         <label for="remember">
                         记住密码
                          </label>
-
-                    </div>
-
+                    </div> -->
 
                     <div class="am-form-group">
 

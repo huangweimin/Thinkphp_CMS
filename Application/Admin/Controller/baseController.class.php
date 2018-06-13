@@ -11,6 +11,10 @@ class BaseController extends Controller
 
         $isLogin = session('isLogin');
 
+        $username = session('username');
+
+        $this->assign('username',$username);
+
         if($isLogin == 0) {
 
             $this->redirect('Admin/Login/index');

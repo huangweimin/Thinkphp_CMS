@@ -10,6 +10,7 @@ class IndexController extends BaseController
      */
     public function index()
     {
+
     	$map['is_deleted'] = 0;
 
     	$news_count = M('news')->where($map)->count();
@@ -23,8 +24,6 @@ class IndexController extends BaseController
     	$now_time = date('Y-m-d H:i:s');
 
     	$this->assign('now_time',$now_time);
-
-		$map['is_deleted'] = 0;
 
         $hot_list = M('news')->where($map)->order('id desc')->limit(5)->select();
 

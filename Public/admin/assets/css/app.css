@@ -1910,3 +1910,8 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
     right: 0;
   }
 }
+
+/*reset*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset!important;  
+}

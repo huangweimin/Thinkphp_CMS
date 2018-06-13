@@ -154,7 +154,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="j-logout">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -214,6 +214,31 @@
             </ul>
         </div>
 
+        <script type="text/javascript">
+          // 提交
+            $('.j-logout').on('click',function(){
+
+                $.ajax({
+
+                    url: '<?php echo U("Admin/Login/logout");?>',
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            window.location.href = '/Admin//Login/index';
+
+                        } 
+
+                    }
+
+                });
+
+            })
+
+    </script>
 
 
    <!-- 内容区域 -->
