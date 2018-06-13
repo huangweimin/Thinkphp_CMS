@@ -196,7 +196,7 @@
             <!-- 菜单 -->
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">
-                    <a href="/Admin/Index/index" data-href="Indx">
+                    <a href="/Admin/Index/index" data-href="Index">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>

@@ -12985,3 +12985,1580 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
 
+[ 2018-06-13T13:51:51+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2018-06-13T13:52:07+08:00 ] ::1 /Admin/News/create?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/NewsController.class.php on line 30 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_news` WHERE `id` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2018-06-13T13:52:15+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2018-06-13T13:54:59+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2018-06-13T13:55:02+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001630s ]
+
+[ 2018-06-13T13:55:03+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-06-13T13:55:07+08:00 ] ::1 /Admin/News/create?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004599s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/NewsController.class.php on line 30 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_news` WHERE `id` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2018-06-13T13:56:04+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-06-13T13:56:29+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2018-06-13T13:56:31+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-06-13T13:56:32+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-06-13T13:56:32+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2018-06-13T13:57:31+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001998s ]
+
+[ 2018-06-13T13:57:50+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2018-06-13T13:58:14+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2018-06-13T13:58:16+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-06-13T13:58:18+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-06-13T13:58:19+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2018-06-13T13:58:20+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2018-06-13T13:58:28+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-06-13T13:58:29+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-06-13T13:58:30+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002084s ]
+
+[ 2018-06-13T13:58:33+08:00 ] ::1 /Admin/News/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/NewsController.class.php on line 30 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 240 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 248 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 280 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2018-06-13T13:58:35+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-06-13T13:58:35+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-06-13T13:58:36+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2018-06-13T13:58:37+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2018-06-13T13:58:45+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2018-06-13T13:59:37+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-06-13T13:59:39+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2018-06-13T13:59:40+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2018-06-13T13:59:40+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2018-06-13T13:59:49+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2018-06-13T13:59:54+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-06-13T13:59:57+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-06-13T13:59:57+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2018-06-13T13:59:58+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2018-06-13T14:00:19+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-06-13T14:01:03+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-06-13T14:01:04+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-06-13T14:01:04+08:00 ] ::1 /Admin/News/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/NewsController.class.php on line 30 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 240 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 248 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 280 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-06-13T14:01:10+08:00 ] ::1 /Admin/News/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/NewsController.class.php on line 30 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 240 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 248 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 280 行.
+NOTIC: [8] Undefined variable: news_detail /Applications/MAMP/htdocs/Thinkphp_demo/Application/Runtime/Cache/Admin/14a18086b943edca376459c8f6ba411b.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-06-13T14:01:29+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2018-06-13T14:01:30+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-06-13T14:01:31+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2018-06-13T14:01:33+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-06-13T14:01:34+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-06-13T14:01:36+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-06-13T14:01:37+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-06-13T14:02:20+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_news` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_cases` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2018-06-13T14:02:21+08:00 ] ::1 /Admin/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/NewsModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_news` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2018-06-13T14:02:22+08:00 ] ::1 /Admin/Cases/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2018-06-13T14:02:24+08:00 ] ::1 /Admin/Cases/create?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_cases` WHERE `id` = 3 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006983s ]
+
+[ 2018-06-13T14:02:27+08:00 ] ::1 /Admin/Cases/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-06-13T14:02:38+08:00 ] ::1 /index.php/Admin/Cases/fileUpload.html?dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-06-13T14:02:39+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 59 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_cases` WHERE `title` = '地素时尚周二申购' AND `is_deleted` = 0 AND `id` <> '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `tp_cases` SET `title`='地素时尚周二申购',`desc`='晨报讯6月12日，地素时尚股份有限公司IPO申购',`cover`='2018-06-13/5b20b373e6e17.png',`content`='晨报讯6月12日，地素时尚股份有限公司IPO申购。公司此次发行6100万股，申购价格27.52元，发行市盈率22.99倍，拟募集资金15.82亿元。其中网上发行1830万股，申购代码为732587，单一账户申购上限1.8万股。如无意外，A股又将迎来一只时装股。不过，目前公司尚有两起案件未完全“了结”，其实际控制人马瑞敏的前夫钱维6月5日再次举报地素时尚涉嫌“带病上市”。&lt;img src=&quot;/Uploads/2018-06-13/5b20b37e522b0.png&quot; alt=&quot;&quot; /&gt;',`is_show`='1' WHERE `id` = 3 [ RunTime:0.0022s ]
+
+[ 2018-06-13T14:03:06+08:00 ] ::1 /Admin/Cases/create?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_cases` WHERE `id` = 3 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-06-13T14:03:10+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 59 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_cases` WHERE `title` = '地素时尚周二申购' AND `is_deleted` = 0 AND `id` <> '3' LIMIT 1   [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: cover /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 116 行.
+SQL: UPDATE `tp_cases` SET `title`='地素时尚周二申购',`desc`='晨报讯6月12日，地素时尚股份有限公司IPO申购',`cover`=NULL,`content`='晨报讯6月12日，地素时尚股份有限公司IPO申购。公司此次发行6100万股，申购价格27.52元，发行市盈率22.99倍，拟募集资金15.82亿元。其中网上发行1830万股，申购代码为732587，单一账户申购上限1.8万股。如无意外，A股又将迎来一只时装股。不过，目前公司尚有两起案件未完全“了结”，其实际控制人马瑞敏的前夫钱维6月5日再次举报地素时尚涉嫌“带病上市”。&lt;img src=&quot;/Uploads/2018-06-13/5b20b37e522b0.png&quot; alt=&quot;&quot; /&gt;',`is_show`='1' WHERE `id` = 3 [ RunTime:0.0015s ]
+
+[ 2018-06-13T14:03:11+08:00 ] ::1 /index.php/Admin/Cases/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-06-13T14:03:14+08:00 ] ::1 /index.php/Admin/Cases/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2018-06-13T14:03:16+08:00 ] ::1 /Admin/Cases/create?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 31 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_cases` WHERE `id` = 3 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-06-13T14:03:20+08:00 ] ::1 /Admin/Cases/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2018-06-13T14:03:21+08:00 ] ::1 /Admin/Cases/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [2] Missing argument 1 for I(), called in /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Controller/CasesController.class.php on line 59 and defined /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /Applications/MAMP/htdocs/Thinkphp_demo/ThinkPHP/Common/functions.php 第 376 行.
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `tp_cases` WHERE `title` = '地素时尚周二申购' AND `is_deleted` = 0 AND `id` <> '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `tp_cases` SET `title`='地素时尚周二申购',`desc`='晨报讯6月12日，地素时尚股份有限公司IPO申购',`cover`='2018-06-13/5b20b3a840ff5.png',`content`='晨报讯6月12日，地素时尚股份有限公司IPO申购。公司此次发行6100万股，申购价格27.52元，发行市盈率22.99倍，拟募集资金15.82亿元。其中网上发行1830万股，申购代码为732587，单一账户申购上限1.8万股。如无意外，A股又将迎来一只时装股。不过，目前公司尚有两起案件未完全“了结”，其实际控制人马瑞敏的前夫钱维6月5日再次举报地素时尚涉嫌“带病上市”。&lt;img src=&quot;/Uploads/2018-06-13/5b20b37e522b0.png&quot; alt=&quot;&quot; /&gt;',`is_show`='1' WHERE `id` = 3 [ RunTime:0.0012s ]
+
+[ 2018-06-13T14:03:22+08:00 ] ::1 /index.php/Admin/Cases/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-06-13T14:03:24+08:00 ] ::1 /index.php/Admin/Cases/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of Admin\Model\CasesModel::Create() should be compatible with Think\Model::create($data = '', $type = '') /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_cases` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: limit /Applications/MAMP/htdocs/Thinkphp_demo/Application/Admin/Model/CasesModel.class.php 第 19 行.
+SQL: SELECT * FROM `tp_cases` WHERE `is_deleted` = 0 ORDER BY `id` desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+

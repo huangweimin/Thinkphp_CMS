@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="/Public/admin/assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/Public/admin/assets/css/dataTables.bootstrap.css" />
     <link rel="stylesheet" href="/Public/admin/assets/css/app.css">
+    <link rel="stylesheet" href="/Public/admin/kindeditor/themes/default/default.css">
+    <script src="/Public/admin/kindeditor/kindeditor-all.js"></script>
+    <script src="/Public/admin/kindeditor/lang/zh-CN.js"></script>
     <script src="/Public/admin/assets/js/jquery.min.js"></script>
     <script src="/Public/admin/assets/js/theme.js"></script>
 
@@ -193,7 +196,7 @@
             <!-- 菜单 -->
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">
-                    <a href="/Admin/Index/index" data-href="Indx">
+                    <a href="/Admin/Index/index" data-href="Index">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -213,9 +216,7 @@
 
 
 
-    <link rel="stylesheet" href="/Public/admin/kindeditor/themes/default/default.css">
-    <script src="/Public/admin/kindeditor/kindeditor-all.js"></script>
-    <script src="/Public/admin/kindeditor/lang/zh-CN.js"></script>
+    
 
    <!-- 内容区域 -->
     <div class="tpl-content-wrapper">
@@ -413,7 +414,7 @@
 
                             alert("操作成功！")
 
-                            // window.location.href = '<?php echo U("Cases/index");?>';
+                            window.location.href = '<?php echo U("Cases/index");?>';
 
                         } else {
 
