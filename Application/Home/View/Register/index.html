@@ -14,10 +14,10 @@
 				<div class="am-form-group">
 					<div class="am-g">
 						<div class="am-u-md-2 am-padding-0 am-text-right">
-							<label for="doc-vld-name-2" class="register-name">账号</label>
+							<label for="username" class="register-name">账号</label>
 						</div>
 						<div class="am-u-md-10">
-							<input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+							<input type="text" id="username" minlength="0" placeholder="输入用户名（至少 3 个字符）" required/>
 						</div>
 					</div>
 				</div>
@@ -25,10 +25,10 @@
 				<div class="am-form-group">
 					<div class="am-g">
 						<div class="am-u-md-2 am-padding-0 am-text-right">
-							<label for="doc-vld-pwd-1" class="register-pwd">密码</label>
+							<label for="password" class="register-pwd">密码</label>
 						</div>
 						<div class="am-u-md-10">
-							<input type="password" id="doc-vld-pwd-1" placeholder="6 位数字的银行卡密码" pattern="^\d{6}$" required/>
+							<input type="password" id="password" placeholder="输入密码" />
 						</div>
 					</div>
 				</div>
@@ -36,22 +36,73 @@
 				<div class="am-form-group">
 					<div class="am-g">
 						<div class="am-u-md-2 am-padding-0 am-text-right">
-							<label for="doc-vld-pwd-2">确认密码</label>
+							<label for="password-comfirm">确认密码</label>
 						</div>
 						<div class="am-u-md-10">
-							<input type="password" id="doc-vld-pwd-2" placeholder="请与上面输入的值一致" data-equal-to="#doc-vld-pwd-1" required/>
+							<input type="password" id="password-comfirm" placeholder="请与上面输入的值一致" data-equal-to="#password" required/>
 						</div>
 					</div>
 				</div>
 	
 				<div class="am-g">
-					<div class="am-u-md-10">
-						<button class="am-btn am-btn-secondary" type="submit">注册</button>
+					<div class="am-u-md-10"> 
+						<button class="am-btn am-btn-secondary j-register" type="button">注册</button>
 					</div>
 				</div>
 			</fieldset>
 		</form>
 	</div>
 </div>
+
+
+	<script type="text/javascript">
+          // 提交
+            $('.j-register').on('click',function(){
+
+                if(!$('#username').val()) { alert('请输入帐号！'); return}
+
+                if(!$('#password').val()) { alert('请输入密码！'); return}
+
+                if(!$('#password-comfirm').val()) { alert('请确定密码！'); return}
+
+                if($('#password').val() != $('#password-comfirm').val()) { alert('两次密码不一致'); return}
+
+                var param = {
+
+                     username : $('#username').val(),
+
+                     password : $('#password').val()
+
+                }
+
+                $.ajax({
+
+                    url: "register",
+
+                    data: param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                        	alert('注册成功！')
+
+                            window.location.href = '/Home//Login/index';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+            })
+
+    </script>
 
 <include file="Share/footer" />

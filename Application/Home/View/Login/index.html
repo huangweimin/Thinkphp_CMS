@@ -8,6 +8,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="__PUBLIC__/home/assets/css/amazeui.css" />
 	<link rel="stylesheet" href="__PUBLIC__/home/assets/css/other.min.css" />
+    <script src="__PUBLIC__/home/assets/js/jquery-2.1.0.js" charset="utf-8"></script>
 </head>
 
 <body class="login-container">
@@ -17,21 +18,65 @@
 		</div>
 		<form action="" class="am-form" data-am-validator>
 			<div class="am-form-group">
-				<label for="doc-vld-name-2">
+				<label for="username">
 					<i class="am-icon-user"></i>
 				</label>
-				<input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+				<input type="text" id="username" placeholder="帐号" required/>
 			</div>
 
 			<div class="am-form-group">
-				<label for="doc-vld-email-2">
+				<label for="password">
 					<i class="am-icon-key"></i>
 				</label>
-				<input type="email" id="doc-vld-email-2" placeholder="输入邮箱" required/>
+				<input type="password" id="password" placeholder="密码" required/>
 			</div>
-			<button class="am-btn am-btn-secondary" type="submit">登录</button>
+			<button class="am-btn am-btn-secondary j-login" type="button">登录</button>
 		</form>
 	</div>
+
+	<script type="text/javascript">
+          // 提交
+            $('.j-login').on('click',function(){
+
+                if(!$('#username').val()) { alert('请输入帐号！'); return}
+
+                if(!$('#password').val()) { alert('请输入密码！'); return}
+
+                var param = {
+
+                     username : $('#username').val(),
+
+                     password : $('#password').val()
+
+                }
+
+                $.ajax({
+
+                    url: "login",
+
+                    data: param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            window.location.href = '/Admin//Index/index';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+            })
+
+    </script>
 </body>
 
 </html>

@@ -11,10 +11,7 @@
                 <strong class="footer_main--column_title">关于我们</strong>
                 <div class="footer_about">
                   <p class="footer_about--text">
-                    云适配(AllMobilize Inc.) 是全球领先的HTML5企业移动化解决方案供应商，由前微软美国总部IE浏览器核心研发团队成员及移动互联网行业专家在美国西雅图创立.
-                  </p>
-                  <p class="footer_about--text">
-                    云适配跨屏云也成功应用于超过30万家企业网站，包括微软、联想等世界500强企业
+                    {$footer_about|mb_substr=0,120,'utf-8'}
                   </p>
                 </div>
               </div>
@@ -24,21 +21,11 @@
               <div class="footer_main--column">
                 <strong class="footer_main--column_title">新闻中心</strong>
                 <ul class="footer_navigation">
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">Enterplorer 企业浏览器</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">Xcloud 网站跨屏云</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a>
-                  </li>
+                  <volist name="footer_new_list" id="vo">
+                    <li class="footer_navigation--item">
+                      <a href="/Home/News/detail/id/{$vo.id}" class="footer_navigation--link">{$vo.title|mb_substr=0,10,'utf-8'}</a>
+                    </li>
+                  </volist> 
                 </ul>
               </div>
             </div>
@@ -47,21 +34,11 @@
               <div class="footer_main--column">
                 <strong class="footer_main--column_title">成功案例</strong>
                 <ul class="footer_navigation">
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">企业移动信息化白皮书</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">企业移动信息化白皮书</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">企业移动信息化白皮书</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">企业移动信息化白皮书</a>
-                  </li>
-                  <li class="footer_navigation--item">
-                    <a href="#" class="footer_navigation--link">企业移动信息化白皮书</a>
-                  </li>
+                  <volist name="footer_case_list" id="vo">
+                    <li class="footer_navigation--item">
+                      <a href="/Home/Cases/index" class="footer_navigation--link">{$vo.title|mb_substr=0,10,'utf-8'}</a>
+                    </li>
+                  </volist> 
                 </ul>
               </div>
             </div>
