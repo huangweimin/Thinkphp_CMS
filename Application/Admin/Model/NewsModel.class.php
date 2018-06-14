@@ -6,7 +6,6 @@ use Think\Model;
 
 class NewsModel extends Model
 {
-    protected $tableName = 'news';
 
     /**
      * 获取列表

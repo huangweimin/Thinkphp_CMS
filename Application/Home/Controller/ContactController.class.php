@@ -12,4 +12,18 @@ class ContactController extends Controller
 
     }
 
+    /**
+     * 新增留言
+     */
+    public function create()
+    {
+
+        $param = I();
+
+        $result = D('Comments')->Create($param);
+
+        $this->ajaxReturn($result);
+
+    }
+
 }
