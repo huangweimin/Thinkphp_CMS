@@ -11,7 +11,7 @@
  Target Server Version : 50722
  File Encoding         : 65001
 
- Date: 13/06/2018 16:13:25
+ Date: 14/06/2018 12:53:51
 */
 
 SET NAMES utf8mb4;
@@ -54,7 +54,37 @@ CREATE TABLE `tp_cases` (
 BEGIN;
 INSERT INTO `tp_cases` VALUES (1, '和平宣言', '外媒称，韩国总统府青瓦台6月5日对特朗普和朝鲜最高领导人金正恩即将举行的峰会表示欢迎，称韩国衷心希望这次历史性会晤取得成功。', '外媒称，韩国总统府青瓦台6月5日对特朗普和朝鲜最高领导人金正恩即将举行的峰会表示欢迎，称韩国衷心希望这次历史性会晤取得成功。\n\n据韩联社6月5日报道，在白宫发布朝美峰会将于12日上午9点举行的消息的几个小时后，青瓦台便发表简短声明说：“我国政府希望朝美峰会取得成功。”\n\n青瓦台强调，韩国将继续谋求正式结束战争，但这取决于朝美峰会成功与否。声明说：“其他问题——如终战宣言——将由韩国、朝鲜和美国在国际社会的密切合作下进行。”', '2018-06-13/5b20907eead6a.png', '2018-06-13 09:42:16', '1', '0');
 INSERT INTO `tp_cases` VALUES (2, '云南省办理中央环境保护督察', '截止目前共计接收到中央第六环保督察组五批次共计255件交办件,涉及大气、噪声、土壤、辐射、水污染和生态破坏等环境问题。各有关地方和部门正在办理当中。', '昆明信息港讯中央第六环境保护督察组于6月5日进驻云南省开展环境保护督察“回头看”工作,并向社会公开了受理群众投诉举报我省环境问题的电话和邮政信箱,这一举措得到了广大人民群众的积极响应,6月5日以来,陆续收到全省各地群众的投诉举报。按照“每天一汇总,每天一转办”的工作制度。6月9日21:30,督察组向我省交办第五批群众举报投诉环境问题62件(含来信举报11件)。当日22:36,云南省环境保护督察工作领导小组办公室已将“回头看”督察组交办我省的第五批62个环境问题全部移交相关州(市)进行办理', '2018-06-13/5b20907eead6a.png', '2018-06-13 09:42:19', '1', '0');
-INSERT INTO `tp_cases` VALUES (3, '地素时尚周二申购', '晨报讯6月12日，地素时尚股份有限公司IPO申购', '晨报讯6月12日，地素时尚股份有限公司IPO申购。公司此次发行6100万股，申购价格27.52元，发行市盈率22.99倍，拟募集资金15.82亿元。其中网上发行1830万股，申购代码为732587，单一账户申购上限1.8万股。如无意外，A股又将迎来一只时装股。不过，目前公司尚有两起案件未完全“了结”，其实际控制人马瑞敏的前夫钱维6月5日再次举报地素时尚涉嫌“带病上市”。&lt;img src=&quot;/Uploads/2018-06-13/5b20b37e522b0.png&quot; alt=&quot;&quot; /&gt;', '2018-06-13/5b20b3a840ff5.png', '2018-06-13 09:42:39', '1', '0');
+INSERT INTO `tp_cases` VALUES (3, '地素时尚周二申购', '晨报讯6月12日，地素时尚股份有限公司IPO申购', '晨报讯6月12日，地素时尚股份有限公司IPO申购。公司此次发行6100万股，申购价格27.52元，发行市盈率22.99倍，拟募集资金15.82亿元。其中网上发行1830万股，申购代码为732587，单一账户申购上限1.8万股。如无意外，A股又将迎来一只时装股。不过，目前公司尚有两起案件未完全“了结”，其实际控制人马瑞敏的前夫钱维6月5日再次举报地素时尚涉嫌“带病上市”。&lt;img src=&quot;/Uploads/2018-06-13/5b20b37e522b0.png&quot; alt=&quot;&quot; /&gt;', '2018-06-13/5b20b3a840ff5.png', '2018-06-13 09:42:39', '1', '1');
+COMMIT;
+
+-- ----------------------------
+-- Table structure for tp_comments
+-- ----------------------------
+DROP TABLE IF EXISTS `tp_comments`;
+CREATE TABLE `tp_comments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `is_show` varchar(255) DEFAULT '1',
+  `phone` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `is_deleted` varchar(255) DEFAULT '0',
+  `create_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tp_comments
+-- ----------------------------
+BEGIN;
+INSERT INTO `tp_comments` VALUES (1, '管理员', 'admin@qq.com', '1', '138241xxxx', '我的留言是XX', '深圳', '0', NULL);
+INSERT INTO `tp_comments` VALUES (2, '2', NULL, '1', NULL, NULL, NULL, '1', NULL);
+INSERT INTO `tp_comments` VALUES (3, '3', '', '1', '', '1', '', '1', '2018-06-14 11:59:02');
+INSERT INTO `tp_comments` VALUES (4, '333', '', '1', '', '333', '', '1', '2018-06-14 11:59:23');
+INSERT INTO `tp_comments` VALUES (5, '33', '', '1', '', '44', '', '1', '2018-06-14 12:00:07');
+INSERT INTO `tp_comments` VALUES (6, '测试用户', 'test@qq.com', '1', '138241xxx1', '留言内容', '', '0', '2018-06-14 12:02:08');
+INSERT INTO `tp_comments` VALUES (7, '123', '33', '1', '123', '444', '22', '1', '2018-06-14 12:04:30');
 COMMIT;
 
 -- ----------------------------
