@@ -4,7 +4,7 @@ namespace Admin\Model;
 
 use Think\Model;
 
-class CommentsModel extends Model
+class UserModel extends Model
 {
     /**
      * 获取列表
@@ -12,7 +12,7 @@ class CommentsModel extends Model
     public function Get()
     {
 
-    	$model = M('comments');
+    	$model = M('user');
 
         $map['is_deleted'] = 0;
 
@@ -28,7 +28,7 @@ class CommentsModel extends Model
   	  public function Del($param)
     {
 
-    	$model = M('comments');
+    	$model = M('user');
 
         $doDel = false;
 

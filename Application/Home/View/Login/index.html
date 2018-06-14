@@ -8,7 +8,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="__PUBLIC__/home/assets/css/amazeui.css" />
 	<link rel="stylesheet" href="__PUBLIC__/home/assets/css/other.min.css" />
-    <script src="__PUBLIC__/home/assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="__PUBLIC__/home/assets/css/common.min.css" />
+	<script src="__PUBLIC__/home/assets/js/jquery-2.1.0.js" charset="utf-8"></script>
 </head>
 
 <body class="login-container">
@@ -35,48 +36,48 @@
 	</div>
 
 	<script type="text/javascript">
-          // 提交
-            $('.j-login').on('click',function(){
+		// 提交
+		$('.j-login').on('click', function () {
 
-                if(!$('#username').val()) { alert('请输入帐号！'); return}
+			if (!$('#username').val()) { alert('请输入帐号！'); return }
 
-                if(!$('#password').val()) { alert('请输入密码！'); return}
+			if (!$('#password').val()) { alert('请输入密码！'); return }
 
-                var param = {
+			var param = {
 
-                     username : $('#username').val(),
+				username: $('#username').val(),
 
-                     password : $('#password').val()
+				password: $('#password').val()
 
-                }
+			}
 
-                $.ajax({
+			$.ajax({
 
-                    url: "login",
+				url: "login",
 
-                    data: param,
+				data: param,
 
-                    type:'post',
+				type: 'post',
 
-                    success:function(res) {
+				success: function (res) {
 
-                        if(res.status == 1){
+					if (res.status == 1) {
 
-                            window.location.href = '/Admin//Index/index';
+						window.location.href = '/Admin//Index/index';
 
-                        } else {
+					} else {
 
-                            alert(res.data)
+						alert(res.data)
 
-                        }
+					}
 
-                    }
+				}
 
-                });
+			});
 
-            })
+		})
 
-    </script>
+	</script>
 </body>
 
 </html>
