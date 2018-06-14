@@ -1,0 +1,40 @@
+# Logs #
+casphp.log
+Application/Runtime/*
+!Application/Runtime/index.html
+Public/Uploads/
+# OS generated files #
+######################
+.DS_Store
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.swp
+*.log
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# IDE
+nbproject
+.idea
+/nbproject/private/
+index.php
+sql.txt
+sql3.txt
