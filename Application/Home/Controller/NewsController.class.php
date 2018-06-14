@@ -12,4 +12,12 @@ class NewsController extends Controller
 
     }
 
+    public function detail()
+    {
+
+        $this->display();
+
+    }
+
+
 }

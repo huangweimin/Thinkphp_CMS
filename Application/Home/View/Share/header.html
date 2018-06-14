@@ -1,47 +1,175 @@
-<html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>ThinkPHP web</title>
+<!DOCTYPE html>
+<html lang="en">
 
-        <link type="text/css" rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css"/>
-        <link type="text/css" rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css"/>
-        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/common.css"/>
-        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/amazeui.swiper.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ThinkPHP web</title>
+    <link rel="stylesheet" href="__PUBLIC__/home/assets/css/amazeui.css" />
+    <link rel="stylesheet" href="__PUBLIC__/home/assets/css/common.min.css" />
+</head>
 
-    <body>
-
-    <header class="am-topbar">
-        <h1 class="am-topbar-brand">
-            <a href="#">Amaze UI</a>
-        </h1>
-        
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-        
-        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-            <ul class="am-nav am-nav-pills am-topbar-nav">
-            <li class="am-active" data-class="Index"><a href="/">首页</a></li>
-            <li data-class="About"><a href="/Home/About/index">公司简介</a></li>
-            <li data-class="News"><a href="/Home/News/index">新闻中心</a></li>
-            <li class="am-dropdown" data-am-dropdown data-class="Product">
-                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                    产品中心 <span class="am-icon-caret-down"></span>
-                </a>
-                <ul class="am-dropdown-content">
-                <li class="am-dropdown-header">标题</li>
-                <li><a href="#">太阳能</a></li>
-                <li><a href="#">空气能</a></li>
-                </ul>
-            </li>
-            </ul>
-        
-            <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
-            <div class="am-form-group">
-                <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+<body>
+    <div class="layout">
+        <!--===========layout-header================-->
+        <div class="layout-header am-hide-sm-only">
+            <!--topbar start-->
+            <div class="topbar">
+                <div class="container">
+                    <div class="am-g">
+                        <div class="am-u-md-3">
+                            <div class="topbar-left">
+                                <i class="am-icon-globe"></i>
+                                <div class="am-dropdown" data-am-dropdown>
+                                    <button class="am-btn am-btn-primary am-dropdown-toggle" data-am-dropdown-toggle>切换语言
+                                        <span class="am-icon-caret-down"></span>
+                                    </button>
+                                    <ul class="am-dropdown-content">
+                                        <li>
+                                            <a href="#">English</a>
+                                        </li>
+                                        <li class="am-divider"></li>
+                                        <li>
+                                            <a href="#">Chinese</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-u-md-9">
+                            <div class="topbar-right am-text-right am-fr">
+                                <a href="/Home/Login/index">登录</a>
+                                <a href="/Home/Register/index">注册</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </form>
-        
+            <!--topbar end-->
+
+
+            <div class="header-box" data-am-sticky>
+                <!--header start-->
+                <div class="container">
+                    <div class="header">
+                        <div class="am-g">
+                            <div class="am-u-lg-2 am-u-sm-12">
+                                <div class="logo">
+                                    <a href="/">
+                                        <img src="__PUBLIC__/home/assets/images/logo.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="am-u-md-10">
+                                <div class="header-right am-fr">
+                                    <div class="header-contact">
+                                    </div>
+                                    <a href="/Home/Contact/index" class="contact-btn">
+                                        <button type="button" class="am-btn am-btn-secondary am-radius">联系我们</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--header end-->
+
+                <!--nav start-->
+                <div class="nav-contain">
+                    <div class="nav-inner">
+                        <ul class="am-nav am-nav-pills am-nav-justify">
+                            <li class="">
+                                <a href="/">首页</a>
+                            </li>
+                            <li>
+                                <a href="/Home/News/index">新闻中心</a>
+                                <!-- sub-menu start-->
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="/Home/News/index">公司动态</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/Home/News/index">行业动态</a>
+                                    </li>
+                                </ul>
+                                <!-- sub-menu end-->
+                            </li>
+                            <li>
+                                <a href="/Home/Cases/index">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="/Home/About/index">关于我们</a>
+                            </li>
+                            <li>
+                                <a href="/Home/Contact/index">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--nav end-->
+            </div>
         </div>
-    </header>
-      
+
+        <!--mobile header start-->
+        <div class="m-header">
+            <div class="am-g am-show-sm-only">
+                <div class="am-u-sm-2">
+                    <div class="menu-bars">
+                        <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}">
+                            <i class="am-menu-toggle-icon am-icon-bars"></i>
+                        </a>
+                        <!-- 侧边栏内容 -->
+                        <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+                            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+                            <div class="am-offcanvas">
+                                <div class="am-offcanvas-bar">
+                                    <ul class="am-menu-nav am-avg-sm-1">
+                                        <li>
+                                            <a href="/" class="">首页</a>
+                                        </li>
+                                        <li class="am-parent">
+                                            <a href="/Home/News/index" class="">新闻中心</a>
+                                            <ul class="am-menu-sub am-collapse  ">
+                                                <li class="">
+                                                    <a href="/Home/News/index" class="">公司动态</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="/Home/News/index" class="">行业动态</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="/Home/Cases/index" class="">客户案例</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/Home/About/index" class="">关于我们</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/Home/Contact/index" class="">联系我们</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/Home/Login/index" class="">登录</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/Home/Register/index" class="">注册</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="am-u-sm-5 am-u-end">
+                    <div class="m-logo">
+                        <a href="">
+                            <img src="__PUBLIC__/home/assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--mobile header end-->
+        </div>

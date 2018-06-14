@@ -8,10 +8,6 @@ class IndexController extends Controller
     public function index()
     {
     	
-    	// $menu = "哈哈";
-
-     //    $this->assign('menu', $menu);
-
         $this->display();
 
     }
