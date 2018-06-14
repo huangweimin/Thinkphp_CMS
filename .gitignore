@@ -1,8 +1,7 @@
 # Logs #
 casphp.log
 Application/Runtime/*
-!Application/Runtime/index.html
-Public/Uploads/
+Uploads/*
 # OS generated files #
 ######################
 .DS_Store
