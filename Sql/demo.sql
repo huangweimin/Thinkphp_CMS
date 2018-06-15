@@ -11,7 +11,7 @@
  Target Server Version : 50722
  File Encoding         : 65001
 
- Date: 15/06/2018 11:14:09
+ Date: 15/06/2018 16:27:15
 */
 
 SET NAMES utf8mb4;
@@ -91,6 +91,27 @@ INSERT INTO `tp_comments` VALUES (8, 'f2e', '', '1', '13824122222', 'adf', '', '
 COMMIT;
 
 -- ----------------------------
+-- Table structure for tp_custom
+-- ----------------------------
+DROP TABLE IF EXISTS `tp_custom`;
+CREATE TABLE `tp_custom` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `key` text,
+  `value` text,
+  `is_deleted` varchar(255) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tp_custom
+-- ----------------------------
+BEGIN;
+INSERT INTO `tp_custom` VALUES (1, 'site_name', 'Think PHP', '0');
+INSERT INTO `tp_custom` VALUES (2, 'copyright', '2017-2018 by Smile', '0');
+INSERT INTO `tp_custom` VALUES (8, 'hm', '我的衣服', '0');
+COMMIT;
+
+-- ----------------------------
 -- Table structure for tp_news
 -- ----------------------------
 DROP TABLE IF EXISTS `tp_news`;
@@ -105,7 +126,7 @@ CREATE TABLE `tp_news` (
   `type_id` int(11) DEFAULT NULL,
   `is_deleted` int(255) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tp_news
@@ -131,6 +152,7 @@ INSERT INTO `tp_news` VALUES (20, '44', '', '2018-06-13 09:27:36', '公司新闻
 INSERT INTO `tp_news` VALUES (21, '222', '', '2018-06-13 15:13:25', '公司新闻', '1', '', 1, 1);
 INSERT INTO `tp_news` VALUES (22, '111', '', '2018-06-15 10:00:09', '公司新闻', '1', '', 1, 0);
 INSERT INTO `tp_news` VALUES (23, '333', '', '2018-06-15 10:02:34', '公司新闻', '1', '', 1, 0);
+INSERT INTO `tp_news` VALUES (24, NULL, NULL, '2018-06-15 14:59:11', NULL, NULL, NULL, NULL, 0);
 COMMIT;
 
 -- ----------------------------

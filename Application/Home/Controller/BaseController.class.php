@@ -27,6 +27,20 @@ class BaseController extends Controller
 
         $this->assign('system', $system[0]);
 
+        $custom = M('custom')->where(['is_deleted' => 0])->select();
+
+        $custom_arr = array();
+
+        foreach($custom as $k => $v)
+
+        {
+
+            $custom_arr[$v['key']] = $v['value'];
+
+        }
+
+        $this->assign('custom', $custom_arr);
+
     }
 
 }
