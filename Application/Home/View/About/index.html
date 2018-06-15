@@ -27,7 +27,7 @@
 		<div class="section--header">
 			<!-- <h2 class="section--title">云适配</h2> -->
 			<p class="section--description" style="font-size:16px; text-align: left; line-height: 40px;text-indent: 24px;">
-				{$about_content}
+				{$about_content|stripslashes|htmlspecialchars_decode}
 			</p>
 		</div>
 
