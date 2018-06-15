@@ -37,11 +37,11 @@
 				<div class="am-g">
 
 					<volist name="list" id="vo">
-						<div class="am-u-lg-4 am-u-md-6">
+						<div class="am-u-lg-4 am-u-md-6" style="float: left">
 							<div class="article">
 								<div class="article-header">
 									<h2>
-										<a href="/Home/News/detail/id/{$vo.id}" rel="">{$vo.title|mb_substr=0,15,'utf-8'}</a>
+										<a href="/Home/News/detail/type/{$vo.id}" rel="">{$vo.title|mb_substr=0,15,'utf-8'}</a>
 									</h2>
 									<ul class="article--meta">
 										<li class="article--meta_item -date">{$vo.create_time}</li>
@@ -51,7 +51,7 @@
 									<p>{$vo.desc|mb_substr=0,20,'utf-8'}</p>
 								</div>
 								<div class="article--footer">
-									<a href="/Home/News/detail/id/{$vo.id}" class="link">Read More</a>
+									<a href="/Home/News/detail/type/{$vo.id}" class="link">Read More</a>
 								</div>
 							</div>
 						</div>

@@ -10,17 +10,19 @@ class NewsController extends BaseController
     public function index()
     {
 
-    	$map['is_deleted'] = 0;
+		$map['is_deleted'] = 0;
+		
+    	$map['is_show'] = 1;
 
     	$param = I();
 
-    	if($param) {
+    	if($param['type']) {
 
-    		$map['type_id'] = $param['id'];
+    		$map['type_id'] = $param['type'];
     		
-    	}
+		}
 
-        $n=M('news');  
+		$n=M('news');  
 
 		$count = $n->where($map)->count();// 查询满足$condition条件的总记录数 $map表示查询条件  
 
@@ -58,7 +60,9 @@ class NewsController extends BaseController
 	
 		$this->assign('data',$data);
 
-    	$map['is_deleted'] = 0;
+		$map['is_deleted'] = 0;
+		
+    	$map['is_show'] = 1;
 
 		$new_list = M('news')->where($map)->order('id desc')->limit(3)->select();
 	
