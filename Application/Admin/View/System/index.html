@@ -30,7 +30,7 @@
                                  <div class="am-form-group">
                                     <label for="desc" class="am-u-sm-3 am-form-label">网页关键词<span class="tpl-form-line-small-title">Keyword</span></label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="4" id="keyword" placeholder="请输关键词">{$site_detail.desc}</textarea>
+                                        <textarea class="" rows="4" id="keyword" placeholder="请输关键词">{$site_detail.keyword}</textarea>
                                     </div>
                                 </div>
 
@@ -78,22 +78,6 @@
 
     <script type="text/javascript">
         $(function(){
-
-            //还原值
-            // var $news_detail = {$news_detail | json_encode}
-
-            // if($news_detail) {
-
-            //     $("#type").find("option[value="+$news_detail.type_id+"]").attr("selected",true);
-
-            //     if($news_detail.is_show == 0) {
-
-            //         $("#is_show").attr('checked',false)
-
-            //     }
-
-            // }   
-            
 
             // 提交
             $('.j-submit').on('click',function(){
