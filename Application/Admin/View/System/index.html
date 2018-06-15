@@ -1,0 +1,145 @@
+
+<include file="Share/header" />
+
+   <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="row-content am-cf">
+
+            <div class="row">
+
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                    <div class="widget am-cf">
+                        <div class="widget-head am-cf">
+                            <div class="widget-title am-fl">系统设置</div>
+                            <div class="widget-function am-fr">
+                                <a href="javascript:;" class="am-icon-cog"></a>
+                            </div>
+                        </div>
+                        <div class="widget-body am-fr">
+
+                            <form class="am-form tpl-form-border-form tpl-form-border-br">
+                                <div class="am-form-group">
+                                    <label for="title" class="am-u-sm-3 am-form-label">网页标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="title" placeholder="请输入标题文字" value="{$site_detail.title}">
+                                        <small>请填写标题</small>
+                                    </div>
+                                </div>
+
+                                 <div class="am-form-group">
+                                    <label for="desc" class="am-u-sm-3 am-form-label">网页关键词<span class="tpl-form-line-small-title">Keyword</span></label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="4" id="keyword" placeholder="请输关键词">{$site_detail.desc}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="desc" class="am-u-sm-3 am-form-label">网页描述<span class="tpl-form-line-small-title">Desc</span></label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="4" id="desc" placeholder="请输入描述">{$site_detail.desc}</textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success j-submit">提交</button>
+                                        <button type="button" class="am-btn am-btn-default "  onclick="window.location.href='index'">取消</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+           var editor; 
+
+             KindEditor.ready(function(K) { 
+
+             editor = K.create('#content', { 
+
+                    allowFileManager : true,
+
+                     uploadJson:'{:U("fileUpload")}', //上传控制器所在url
+
+                 afterBlur: function(){this.sync();}
+
+                }); 
+
+            }); 
+
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+
+            //还原值
+            // var $news_detail = {$news_detail | json_encode}
+
+            // if($news_detail) {
+
+            //     $("#type").find("option[value="+$news_detail.type_id+"]").attr("selected",true);
+
+            //     if($news_detail.is_show == 0) {
+
+            //         $("#is_show").attr('checked',false)
+
+            //     }
+
+            // }   
+            
+
+            // 提交
+            $('.j-submit').on('click',function(){
+
+                var param = {
+
+                     title : $('#title').val(),
+
+                     keyword : $('#keyword').val(),
+
+                     desc : $('#desc').val()
+
+                }
+
+                $.ajax({
+
+                    url: "save",
+
+                    data:param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            alert("操作成功！")
+
+                            window.location.href = '{:U("System/index")}';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+
+            })
+
+        })
+
+    </script>
+
+
+<include file="Share/footer" />

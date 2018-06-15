@@ -23,6 +23,10 @@ class BaseController extends Controller
 
         $this->assign('footer_about', $footer_about[0]['content']);
 
+        $system = M('system')->select();
+
+        $this->assign('system', $system[0]);
+
     }
 
 }
