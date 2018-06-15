@@ -8,7 +8,7 @@ class SystemModel extends Model
 {
 
     /**
-     * 获取列表
+     * 获取配置
      */
     public function Get()
     {
