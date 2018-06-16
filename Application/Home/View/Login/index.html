@@ -36,8 +36,21 @@
 	</div>
 
 	<script type="text/javascript">
-		// 提交
+		// 提交按钮
 		$('.j-login').on('click', function () {
+
+			Login();
+
+		});
+
+		// 提交按钮
+		$('#password').on('keydown', function (e) {
+
+			if (e.keyCode == 13) { Login(); }
+
+		});
+
+		function Login() {
 
 			if (!$('#username').val()) { alert('请输入帐号！'); return }
 
@@ -75,7 +88,7 @@
 
 			});
 
-		})
+		}
 
 	</script>
 </body>
