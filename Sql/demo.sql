@@ -11,7 +11,7 @@
  Target Server Version : 50722
  File Encoding         : 65001
 
- Date: 15/06/2018 16:27:15
+ Date: 21/06/2018 11:16:08
 */
 
 SET NAMES utf8mb4;
@@ -100,7 +100,7 @@ CREATE TABLE `tp_custom` (
   `value` text,
   `is_deleted` varchar(255) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tp_custom
@@ -108,7 +108,8 @@ CREATE TABLE `tp_custom` (
 BEGIN;
 INSERT INTO `tp_custom` VALUES (1, 'site_name', 'Think PHP', '0');
 INSERT INTO `tp_custom` VALUES (2, 'copyright', '2017-2018 by Smile', '0');
-INSERT INTO `tp_custom` VALUES (8, 'hm', '我的衣服', '0');
+INSERT INTO `tp_custom` VALUES (8, 'hm', '我的衣服2', '0');
+INSERT INTO `tp_custom` VALUES (9, 'hm2', '我的衣服', '1');
 COMMIT;
 
 -- ----------------------------
@@ -132,7 +133,7 @@ CREATE TABLE `tp_news` (
 -- Records of tp_news
 -- ----------------------------
 BEGIN;
-INSERT INTO `tp_news` VALUES (1, '想pick坤音四子', '&lt;p&gt;\n	和头脑风暴一起见证卜可思议啦！\n《机器人争霸》经历了种种磨难就要到决赛啦，男神的颜值你还没有看够？炫酷的机甲还让你有些迷茫？放心跟我们一起来，现场教学机器人最全知识点，围&lt;span style=&quot;background-color:#FF9900;&quot;&gt;观狂炫拽的机器人battle 23123&amp;nbsp; 12&lt;/span&gt;\n&lt;/p&gt;\n&lt;p&gt;\n	&lt;span style=&quot;background-color:#FF9900;&quot;&gt;&lt;br /&gt;\n&lt;/span&gt; \n&lt;/p&gt;\n&lt;p&gt;\n	&lt;span style=&quot;background-color:#FF9900;&quot;&gt;&lt;img src=&quot;/Uploads/2018-06-14/5b2222e680588.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;\n&lt;/span&gt; \n&lt;/p&gt;', '2018-06-11 13:14:46', '行业新闻', '1', '和头脑风暴一起见证卜可思议啦！', 2, 0);
+INSERT INTO `tp_news` VALUES (1, '想pick坤音四子', '&lt;p&gt;\n	和头脑风暴一起见证卜可思议啦！\n《机器人争霸》经历了种种磨难就要到决赛啦，男神的颜值你还没有看够？炫酷的机甲还让你有些迷茫？放心跟我们一起来，现场教学机器人最全知识点，围&lt;span style=&quot;background-color:#FF9900;&quot;&gt;观狂炫拽的机器人battle 23123&amp;nbsp; 12&lt;/span&gt;\n&lt;/p&gt;\n&lt;p&gt;\n	&lt;span style=&quot;background-color:#FF9900;&quot;&gt;&lt;br /&gt;\n&lt;/span&gt; \n&lt;/p&gt;\n&lt;p&gt;\n	&lt;span style=&quot;background-color:#FF9900;&quot;&gt;&lt;img src=&quot;/Uploads/2018-06-14/5b2222e680588.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;\n&lt;/span&gt; \n&lt;/p&gt;', '2018-06-11 13:14:46', '行业新闻', '1', '和头脑风暴一起见证卜可思议啦！22', 2, 0);
 INSERT INTO `tp_news` VALUES (2, '富士康回应亚马逊代工“血汗工厂：正在调查', 'IT之家6月11日消息 劳工权益保护组织中国劳工观察（China Labor Watch）揭示了亚马逊在中国的一家富士康代工厂的劳动条件，对其进行了严厉的抨击。今日根据路透社的报道，富士康已经对此事进行了回应。', '2018-06-11 13:15:33', '公司新闻', '1', '路透社在报道中表示，富士康在一份声明中表示.', 1, 0);
 INSERT INTO `tp_news` VALUES (5, '长宁区“十三五”规划实施情况中期评估调查问卷', '为评估《上海市长宁区国民经济和社会发展第十三个五年规划纲要》（2016-2020）近两年半的实施情况，了解大家对长宁区经济社会发展情况的感受和建议，并根据新形势、新变化，对“十三五”规划内容作进一步优化，特开展中期评估调研工作。本次调查结果仅限中期评估课题研究，不做其他用途。', '2018-06-12 20:48:43', '公司新闻', '1', '长宁区“十三五”规划实施情况中期评估调查问卷', 1, 0);
 INSERT INTO `tp_news` VALUES (6, '文编辑\n宕昌县公安局迅速传达全市“扫黑除恶”', '会上，局党委副书记、政委王新怀就局党委多次召开“扫黑除恶”专项斗争工作专题会议的目的和抓好“扫黑除恶”专项斗争各项工作措施的贯彻落实进行了强调，指出公安机关作为“扫黑除恶”专项斗争的排头兵和主力军，要求各有关部门特别是负责同志要进一步提高思想认识和政治站位，切实尽好责、履好职。\n\n最后，局党委委员张玉安对扫黑除恶专项斗争中关于黑恶势力的认定标准、黑恶势力犯罪案件的侦办及线索排摸等工作进行了讲解。', '2018-06-12 20:49:33', '公司新闻', '1', '文编辑\n宕昌县公安局迅速传达全市“扫黑除恶”', 1, 0);
@@ -152,7 +153,6 @@ INSERT INTO `tp_news` VALUES (20, '44', '', '2018-06-13 09:27:36', '公司新闻
 INSERT INTO `tp_news` VALUES (21, '222', '', '2018-06-13 15:13:25', '公司新闻', '1', '', 1, 1);
 INSERT INTO `tp_news` VALUES (22, '111', '', '2018-06-15 10:00:09', '公司新闻', '1', '', 1, 0);
 INSERT INTO `tp_news` VALUES (23, '333', '', '2018-06-15 10:02:34', '公司新闻', '1', '', 1, 0);
-INSERT INTO `tp_news` VALUES (24, NULL, NULL, '2018-06-15 14:59:11', NULL, NULL, NULL, NULL, 0);
 COMMIT;
 
 -- ----------------------------
@@ -164,6 +164,7 @@ CREATE TABLE `tp_system` (
   `title` varchar(255) DEFAULT NULL,
   `keyword` text,
   `desc` text,
+  `footer_js` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
@@ -171,7 +172,7 @@ CREATE TABLE `tp_system` (
 -- Records of tp_system
 -- ----------------------------
 BEGIN;
-INSERT INTO `tp_system` VALUES (1, 'Think php web ', 'think ', 'This is a templete');
+INSERT INTO `tp_system` VALUES (1, 'Think php web ', 'think ', 'This is a templete', '&lt;script\n  src=&quot;https://code.jquery.com/jquery-3.3.1.slim.js&quot;\n  integrity=&quot;sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=&quot;\n  crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;');
 COMMIT;
 
 -- ----------------------------

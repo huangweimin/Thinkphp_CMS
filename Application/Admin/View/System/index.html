@@ -41,6 +41,14 @@
                                     </div>
                                 </div>
 
+                                <div class="am-form-group">
+                                    <label for="footer_js" class="am-u-sm-3 am-form-label">底部嵌入脚本<span class="tpl-form-line-small-title">Javascript</span></label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="4" id="footer_js" placeholder="请输入脚本内容">{$site_detail.footer_js}</textarea>
+                                        <small>请保证脚本的正确性</small>
+                                    </div>
+                                </div>
+
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
@@ -68,7 +76,9 @@
 
                      keyword : $('#keyword').val(),
 
-                     desc : $('#desc').val()
+                     desc : $('#desc').val(),
+
+                     footer_js : $('#footer_js').val()
 
                 }
 

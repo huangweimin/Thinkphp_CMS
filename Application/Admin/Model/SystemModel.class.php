@@ -43,7 +43,9 @@ class SystemModel extends Model
 
             'keyword' => $param['keyword'],
 
-            'desc' => $param['desc']
+            'desc' => $param['desc'],
+
+            'footer_js' => $param['footer_js']
 
         ]);
 

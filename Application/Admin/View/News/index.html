@@ -37,8 +37,8 @@
                                             <volist name="news_list" id="vo"  >
                                                 <tr class="gradeX">
                                                 <td>{$vo.id}</td>
-                                                <td>{$vo.title}</td>
-                                                <td>{$vo.desc}</td>
+                                                <td>{$vo.title|mb_substr=0,10,'utf-8'}</td>
+                                                <td>{$vo.desc|mb_substr=0,10,'utf-8'}</td>
                                                 <td>{$vo.type}</td>
                                                 <td>{$vo.create_time}</td>
                                                 <td>
