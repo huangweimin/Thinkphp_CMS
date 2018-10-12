@@ -1,5 +1,6 @@
 # Thinkphp_demo
-ThinkPHP 企业站入门DEMO
+ThinkPHP 企业网站 CMS
+
 
 <br>
 功能介绍：<br>
@@ -14,7 +15,7 @@ ThinkPHP 企业站入门DEMO
 <br><br>
 
 
-前台模版：
+前/后台模版：
 使用框架使用Amaze UI模版：素材地址 http://amazeui.org/
 <br><br>
 
