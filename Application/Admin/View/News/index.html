@@ -17,6 +17,7 @@
                                     <div class="am-btn-toolbar">
                                         <div class="am-btn-group am-btn-group-xs">
                                             <button type="button" class="am-btn am-btn-default am-btn-success" onclick="window.location.href='create'"><span class="am-icon-plus"></span> 新增</button>
+                                            <button type="button" class="am-btn am-btn-default am-btn-success export-excel-btn" style="margin-left: 15px;" ><span class="am-icon-plus"></span> 导出EXCEL数据</button>
                                         </div>
                                     </div>
                                 </div>
@@ -83,6 +84,14 @@
         $(document).ready(function(){
 
           $(".j-dataTables").dataTable();
+
+            // 导出
+          $('.export-excel-btn').on('click',function(){
+
+                window.location.href = '{:U("News/exportCSV")}';
+
+          })
+
 
            // 删除
             $('.j-del').on('click',function(){

@@ -83,4 +83,30 @@ class NewsController extends BaseController
 
     }
 
+     /**
+     * 导出
+     */
+    public function exportCSV()
+    {
+        $data = D('News')->getNews();
+
+        $headList = array(
+            'ID',
+            '标题',
+            '内容',
+            '发布时间',
+            '类型',
+            '是否显示',
+            '描述',
+            '类型ID',
+            '是否删除',
+        );
+        $fileName = '新闻列表';
+        
+        writeCsv($data,$headList,$fileName);
+
+        die;
+
+    }   
+
 }
