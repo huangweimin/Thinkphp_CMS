@@ -1,0 +1,123 @@
+
+<include file="Share/header" />
+
+   <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="row-content am-cf">
+
+            <div class="row">
+
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                    <div class="widget am-cf">
+                        <div class="widget-head am-cf">
+                            <div class="widget-title am-fl">{$title}</div>
+                            <div class="widget-function am-fr">
+                                <a href="javascript:;" class="am-icon-cog"></a>
+                            </div>
+                        </div>
+                        <div class="widget-body am-fr">
+
+                            <form class="am-form tpl-form-border-form tpl-form-border-br">
+                                <div class="am-form-group">
+                                    <label for="username" class="am-u-sm-3 am-form-label">用户名 <span class="tpl-form-line-small-title">Username</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" disabled class="tpl-form-input" id="username" placeholder="请输入用户名" value="{$detail.username}" style="width:300px; background: #eee;">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                        <label for="password" class="am-u-sm-3 am-form-label">新密码 <span class="tpl-form-line-small-title">Password</span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="password" class="tpl-form-input" id="password" placeholder="请输入新密码" value=""  style="width:300px;">
+                                        </div>
+                                    </div>
+
+                                <div class="am-form-group" style="border-top: 1px solid #eef1f5;padding-top: 30px;margin-top: 30px;">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success j-submit">提交</button>
+                                        <button type="button" class="am-btn am-btn-default "  onclick="window.location.href='index'">取消</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script type="text/javascript">
+        $(function(){
+
+            // 获取ID 
+             var _search = window.location.search;
+
+             var _page_id = ''
+
+            if (_search.indexOf('?id') != -1){
+
+                _page_id = _search.split('id=')[1];
+
+            }
+
+            // 提交
+            $('.j-submit').on('click',function(){
+
+                var is_show = $('.tpl-switch-btn').is(":checked") ? 1 : 0;
+
+                if(!$('#password').val()){
+
+                    alert('新密码不能为空')
+
+                    return false
+
+                }
+                
+                var param = {
+
+                     do : 'edit',
+
+                     id : _page_id,
+
+                     password : $('#password').val(),
+
+                }
+
+                $.ajax({
+
+                    url: "create",
+
+                    data:param,
+
+                    type:'post',
+
+                    success:function(res) {
+
+                        if(res.status == 1){
+
+                            alert("操作成功！")
+
+                            window.location.href = '{:U("User/index")}';
+
+                        } else {
+
+                            alert(res.data)
+
+                        }
+
+                    }
+
+                });
+
+
+            })
+
+        })
+
+    </script>
+
+
+<include file="Share/footer" />

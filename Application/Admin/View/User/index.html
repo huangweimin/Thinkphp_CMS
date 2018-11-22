@@ -17,8 +17,6 @@
                                     <thead>
                                         <tr>
                                             <th>用户</th>
-                                            <th>邮箱</th>
-                                            <th>注册时间</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -26,13 +24,14 @@
                                             <volist name="user_list" id="vo"  >
                                                 <tr class="gradeX">
                                                 <td>{$vo.username}</td>
-                                                <td>{$vo.email}</td>
-                                                <td>{$vo.create_time}</td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del j-del" data-id="{$vo.id}">
-                                                            <i class="am-icon-trash"></i> 删除
+                                                        <a href="/Admin/User/create?id={$vo.id}">
+                                                            <i class="am-icon-pencil"></i> 编辑
                                                         </a>
+                                                        <!-- <a href="javascript:;" class="tpl-table-black-operation-del j-del" data-id="{$vo.id}">
+                                                            <i class="am-icon-trash"></i> 删除
+                                                        </a> -->
                                                     </div>
                                                 </td>
                                             </tr>
@@ -51,7 +50,7 @@
 
     <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
       <div class="am-modal-dialog">
-        <div class="am-modal-hd">Amaze UI</div>
+        <div class="am-modal-hd">管理员</div>
         <div class="am-modal-bd">
           你，确定要删除这条记录吗？
         </div>
