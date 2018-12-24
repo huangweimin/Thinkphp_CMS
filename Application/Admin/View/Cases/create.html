@@ -41,9 +41,9 @@
                                         <div class="am-u-sm-9">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">
-                                                    <if condition="$cases_detail.cover != ''">
-                                                        <img src="/Uploads/{$cases_detail.cover}" alt="">
-                                                    </if>   
+                                                   
+                                                    <img data-src="/Uploads/{$cases_detail.cover}" alt="" id="cover-img">
+
                                                 </div>
                                                 <button type="button" class="am-btn am-btn-danger am-btn-sm">
                                                     <i class="am-icon-cloud-upload "></i> 添加封面图片</button>
@@ -138,6 +138,8 @@
                 }
 
                 _this._img_path = $cases_detail.cover;
+
+                $('#cover-img').attr('src','/Uploads/'+_this._img_path)
 
             }   
             
@@ -250,6 +252,9 @@
                         if(res) {
 
                             _this._img_path = res
+
+                            $('#cover-img').attr('src','/Uploads/'+_this._img_path)
+
 
                         }
 
